@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자D | AI 심리상담 포트폴리오</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 아이콘 라이브러리 (Heroicons) -->
+    <script type(module) src="https://unpkg.com/heroicons@2.1.1/24/outline/index.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-8 text-center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-indigo-600">개발자D</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Me</a>
+                        <a href="#skills" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#project" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Project</a>
+                        <a href="#contact" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="pt-20 pb-16 md:pt-32 md:pb-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <!-- Profile Image -->
+            <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+                <img class="h-48 w-48 md:h-64 md:w-64 rounded-full object-cover shadow-lg" 
+                     src="https://placehold.co/256x256/E0E7FF/4338CA?text=Developer+D" 
+                     alt="개발자D 프로필 이미지">
+            </div>
+            <!-- Hero Text -->
+            <div class="md:w-2/3 md:pl-12 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+                    개발자D (Developer D)
+                </h1>
+                <p class="text-2xl md:text-3xl text-indigo-600 font-medium mb-6">
+                    "AI가 좋아서 AI로 여러가지를 도전해보고 싶은 개발자입니다."
+                </p>
+                <a href="#project" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-indigo-700 transition duration-300 shadow-md">
+                    프로젝트 보기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">About Me</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md text-lg text-gray-700 leading-relaxed space-y-6">
+                <p>
+                    저는 기술이 단순히 코드를 작성하는 것을 넘어, 사람들의 일상 속 불편함을 해소하고 긍정적인 영향을 줄 수 있다고 믿습니다. 특히 AI 기술이 가진 무한한 가능성에 매료되어, 이 기술을 활용해 복잡한 비즈니스 문제와 실제 사용자들의 어려움을 해결하는 과정에서 큰 보람을 느낍니다.
+                </p>
+                <p>
+                    이 포트폴리오의 'AI 공감 챗봇' 프로젝트는 저의 이러한 철학이 담긴 결과물입니다. React를 활용한 인터랙티브한 프론트엔드 구축과 Node.js 기반의 안정적인 백엔드 설계, 그리고 AWS를 통한 배포 경험을 통해 아이디어를 실제 서비스로 구현하는 전 과정을 주도했습니다. 비즈니스 문제를 기술로 해결하는 과정 그 자체를 즐깁니다.
+                </p>
+                <p>
+                    앞으로도 AI 기술을 깊이 있게 탐구하며, 사용자의 필요를 정확히 파악하고 기술적으로 가장 최적화된 솔루션을 제공하는 개발자로 성장하고 싶습니다. 새로운 도전을 두려워하지 않고 꾸준히 학습하는 자세로 임하겠습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-4">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Tailwind CSS</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">HTML/CSS</span>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-700 mb-4">Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                    </div>
+                </div>
+                <!-- AI & DevOps -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-purple-700 mb-4">AI & DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">AWS</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Gemini API</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">GPT API</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Project: AI 공감 챗봇 "마음, 쉼"</h2>
+
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <!-- Project Main Image -->
+                <img class="w-full h-64 md:h-96 object-cover" 
+                     src="https://placehold.co/1200x600/C4B5FD/4338CA?text=AI+Empathy+Chatbot" 
+                     alt="AI 공감 챗봇 메인 이미지">
+
+                <div class="p-8 md:p-12 space-y-12">
+
+                    <!-- 문제 정의 및 나의 역할 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">문제 정의</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                우리는 종종 자신의 고민을 타인에게 털어놓기 어려워합니다. 상대방을 얼마나 신뢰할 수 있을지, 내 이야기가 어떻게 전달될지 모르기 때문입니다. '마음, 쉼'은 이러한 고민을 해결하기 위해 탄생했습니다. AI는 사용자가 누구인지, 외모가 어떤지 묻지 않고 오직 이야기에만 귀 기울여주는 안전한 상담 상대가 되어줍니다.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">나의 역할 및 기여</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                초기 서비스 기획부터 React 기반 프론트엔드 및 Node.js 백엔드 아키텍처 설계, AWS EB/RDS를 활용한 전체 인프라 구축 및 배포까지 전 과정을 주도적으로 담당했습니다. 사용자의 피드백을 반영하여 지속적으로 서비스를 개선했습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 아키텍처 -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">아키텍처</h3>
+                        <div class="flex justify-center mb-6">
+                            <ul class="flex flex-wrap justify-center gap-4 text-center">
+                                <li class="font-medium">Frontend: <span class="font-normal text-indigo-600">React</span></li>
+                                <li class="font-medium">Backend: <span class="font-normal text-green-600">Node.js</span></li>
+                                <li class="font-medium">AI: <span class="font-normal text-purple-600">Generative AI API</span></li>
+                                <li class="font-medium">Database: <span class="font-normal text-blue-600">AWS RDS</span></li>
+                                <li class="font-medium">Deploy: <span class="font-normal text-orange-600">AWS Elastic Beanstalk</span></li>
+                            </ul>
+                        </div>
+                        <img class="w-full max-w-4xl mx-auto rounded-lg shadow-md" 
+                             src="https://placehold.co/1000x500/DDD6FE/4338CA?text=Project+Architecture+Diagram" 
+                             alt="프로젝트 아키텍처 다이어그램">
+                    </div>
+
+                    <!-- 핵심 기능 -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">핵심 기능</h3>
+                        <div class="space-y-16">
+                            <!-- Feature 1 -->
+                            <div class="flex flex-col md:flex-row items-center gap-8">
+                                <div class="md:w-1/2">
+                                    <h4 class="text-xl font-bold text-indigo-700 mb-3">1. 나에게 맞춘 AI 상담사 설정</h4>
+                                    <p class="text-lg text-gray-700 leading-relaxed">
+                                        사용자가 가장 편안하게 대화할 수 있도록 AI 상담사의 페르소나를 직접 설정하는 기능을 구현했습니다. '따뜻한', '냉철한', '친구 같은 반말' 등 다양한 말투를 선택할 수 있으며, 사용자를 부를 호칭이나 피하고 싶은 대화 주제까지 설정할 수 있습니다. 이러한 설정값은 백엔드에서 AI 프롬프트에 변수로 적용되어 고도로 개인화된 상담 경험을 제공합니다.
+                                    </p>
+                                </div>
+                                <div class="md:w-1/2">
+                                    <img class="w-full rounded-lg shadow-md" 
+                                         src="https://placehold.co/800x500/EDE9FE/4338CA?text=Feature+1:+Prompt+Settings+UI" 
+                                         alt="AI 상담사 설정 스크린샷">
+                                </div>
+                            </div>
+                            <!-- Feature 2 -->
+                            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                                <div class="md:w-1/2">
+                                    <h4 class="text-xl font-bold text-indigo-700 mb-3">2. React Query를 활용한 효율적인 상태 관리</h4>
+                                    <p class="text-lg text-gray-700 leading-relaxed">
+                                        실시간으로 진행되는 채팅 경험을 위해 클라이언트 사이드의 비동기 데이터를 React Query로 관리했습니다. `stale-while-revalidate` 캐싱 전략을 통해 이전 대화 내역을 즉시 보여주고, 백그라운드에서 최신 데이터를 동기화함으로써 사용자 경험을 향상시켰습니다. 이를 통해 불필요한 API 호출을 획기적으로 줄이고, 서버 상태와 UI를 일관성 있게 유지했습니다.
+                                    </p>
+                                </div>
+                                <div class="md:w-1/2">
+                                    <img class="w-full rounded-lg shadow-md" 
+                                         src="https://placehold.co/800x500/EDE9FE/4338CA?text=Feature+2:+State+Management" 
+                                         alt="React Query 상태 관리 개념도">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 결과 및 회고 -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">결과 및 회고</h3>
+                        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h4 class="text-xl font-bold text-gray-800 mb-3">결과 및 성과</h4>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    실제 사용자들로부터 '심리 상담의 문턱이 낮아졌다', '부담 없이 고민을 털어놓을 수 있어 좋았다'는 긍정적인 피드백을 받았습니다. 이 프로젝트를 통해 사용자들이 AI 기술을 더 친숙하게 받아들이고 잘 활용하는 계기가 되었다고 생각합니다.
+                                </p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h4 class="text-xl font-bold text-gray-800 mb-3">회고 (배운 점 및 개선점)</h4>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    기존에 사용하던 Gemini API에 이어 GPT API를 도입하며, 두 API의 유사점과 차이점을 명확히 이해하게 되었습니다. 이는 프롬프트 엔지니어링의 중요성을 다시 한번 깨닫는 계기가 되었습니다. 
+                                    <br><br>
+                                    다만, 사용자들이 AI를 더 효과적으로 활용할 수 있도록 'AI와 현명하게 대화하는 팁' 같은 가이드 섹션을 추가했다면 서비스 만족도가 더 높았을 것이라는 아쉬움이 남습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="section-title">Contact</h2>
+            <p class="text-xl text-gray-700 mb-8">
+                저의 도전에 관심이 생기셨다면 언제든지 편하게 연락주세요.
+            </p>
+            <div class="flex justify-center items-center space-x-8">
+                <!-- Email -->
+                <a href="mailto:email@example.com" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    <span class="mt-2 text-sm">email@example.com</span>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                    <span class="mt-2 text-sm">GitHub</span>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.016-.01.033-.02.05-.03.02-.01.04-.02.06-.03.02-.01.04-.01.06-.02.02-.01.05-.01.07-.01.03 0 .05-.01.08-.01.03 0 .06 0 .09.01.02.01.05.01.07.01.02.01.04.01.06.02.02.01.04.02.06.03.02.01.03.02.05.03.01.01.03.02.04.03.01.01.02.02.03.03.01.01.02.02.03.03.01.01.02.02.03.04.01.01.02.02.02.03.01.01.02.02.03.03.01.01.02.03.02.04.01.01.02.03.02.04.01.01.01.02.02.04.01.01.01.03.02.04.01.02.01.03.02.05.01.02.01.03.01.05.01.02.01.04.01.06.01.02.01.04.01.06 0 .02.01.04.01.06.01.02.01.04.01.06.01.02.01.04.01.05.01.02.01.03.02.05.01.02.01.03.02.04.01.01.01.03.02.04.01.01.02.04.02.04.01.01.02.03.02.04.01.01.02.03.03.04.static.01.01.02.02.03.03.01.01.02.02.03.03.01.01.03.02.04.03.01.01.03.02.05.03.02.01.04.02.06.03.02.01.04.01.06.03.02.01.04.01.06.03.01.01.04.01.06.03.01.01.03.01.06.03.01.01.03.01.05.03.01.01.03.01.05.02.01.01.02.01.04.02.01.01.02.01.04.02.01.01.02.01.04.02.01.01.01.01.03.02.01.01.01.01.03.01.01.01.01.01.03.01.01.01.01.01.02.01.01.01.01.01.02.01.01.01.01.01.02.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.01.0s-0.01-0.03-0.02-0.05c-0.01-0.02-0.01-0.03-0.02-0.04C3.7 3.5 3.7 3.48 3.7 3.47c-0.01-0.02-0.01-0.03-0.02-0.05c-0.01-0.02-0.02-0.03-0.02-0.04c-0.01-0.02-0.02-0.03-0.03-0.04C3.6 3.28 3.58 3.27 3.57 3.25c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.03-0.02-0.04-0.03c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.03-0.02-0.05-0.03c-0.02-0.01-0.03-0.02-0.05-0.03c-0.02-0.01-0.04-0.02-0.06-0.03c-0.02-0.01-0.04-0.01-0.06-0.02c-0.02-0.01-0.05-0.01-0.07-0.01c-0.03 0-0.05-0.01-0.08-0.01c-0.03 0-0.06 0-0.09-0.01c-0.02 0-0.05 0-0.07 0.01c-0.02.01-0.04.01-0.06.02c-0.02.01-0.04.02-0.06.03c-0.02.01-0.03.02-0.05.03c-0.02.01-0.03.02-0.05.03c-0.01.01-0.03.02-0.04.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.02.02-0.03.04c-0.01.01-0.02.02-0.02.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.02.03-0.02.04c-0.01.01-0.02.03-0.02.04c-0.01.01-0.01.02-0.02.04c-0.01.01-0.01.03-0.02.04c-0.01.02-0.01.03-0.02.05c-0.01.02-0.01.03-0.01.05c-0.01.02-0.01.04-0.01.06c-0.01.02-0.01.04-0.01.06c0 .02-0.01.04-0.01.06c-0.01.02-0.01.04-0.01.06c-0.01.02-0.01.04-0.01.05c-0.01.02-0.01.03-0.02.05c-0.01.02-0.01.03-0.02.04c-0.01.01-0.01.03-0.02.04c-0.01.01-0.02.04-0.02.04c-0.01.01-0.02.03-0.02.04c-0.01.01-0.02.03-0.03.04c-0.01.01-0.02.02-0.03.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.03.02-0.04.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.03.02-0.05.03c-0.02.01-0.03.02-0.05.03c-0.02.01-0.04.02-0.06.03c-0.02.01-0.04.01-0.06.02c-0.02.01-0.05.01-0.07.01s-0.06 0-0.09 0.01c-0.02 0-0.05 0-0.07-0.01c-0.02-0.01-0.04-0.01-0.06-0.02c-0.02-0.01-0.04-0.02-0.06-0.03c-0.02-0.01-0.03-0.02-0.05-0.03c-0.02-0.01-0.03-0.02-0.05-0.03c-0.01-0.01-0.03-0.02-0.04-0.03c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.02-0.02-0.03-0.04c-0.01-0.01-0.02-0.02-0.02-0.03c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.02-0.03-0.02-0.04c-0.01-0.01-0.02-0.03-0.02-0.04c-0.01-0.01-0.01-0.02-0.02-0.04c-0.01-0.01-0.01-0.03-0.02-0.04c-0.01-0.02-0.01-0.03-0.02-0.05c-0.01-0.02-0.01-0.03-0.01-0.05c-0.01-0.02-0.01-0.04-0.01-0.06c-0.01-0.02-0.01-0.04-0.01-0.06c0-0.02-0.01-0.04-0.01-0.06c-0.01-0.02-0.01-0.04-0.01-0.06c-0.01-0.02-0.01-0.04-0.01-0.05c-0.01-0.02-0.01-0.03-0.02-0.05c-0.01-0.02-0.01-0.03-0.02-0.04c-0.01-0.01-0.01-0.03-0.02-0.04c-0.01-0.01-0.02-0.04-0.02-0.04c-0.01-0.01-0.02-0.03-0.02-0.04c-0.01-0.01-0.02-0.03-0.03-0.04c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.03-0.02-0.04-0.03c-0.01-0.01-0.02-0.02-0.03-0.03c-0.01-0.01-0.03-0.02-0.05-0.03c-0.02-0.01-0.03-0.02-0.05-0.03c-0.02-0.01-0.04-0.02-0.06-0.03c-0.02-0.01-0.04-0.01-0.06-0.02c-0.02-0.01-0.05-0.01-0.07-0.01c-0.03 0-0.05-0.01-0.08-0.01c-0.03 0-0.06 0-0.09 0.01c-0.02.01-0.05.01-0.07.01c-0.02.01-0.04.01-0.06.02c-0.02.01-0.04.02-0.06.03c-0.02.01-0.03.02-0.05.03c-0.02.01-0.03.02-0.05.03c-0.01.01-0.03.02-0.04.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.02.02-0.03.04c-0.01.01-0.02.02-0.02.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.02.03-0.02.04c-0.01.01-0.02.03-0.02.04c-0.01.01-0.01.02-0.02.04c-0.01.01-0.01.03-0.02.04c-0.01.02-0.01.03-0.02.05c-0.01.02-0.01.03-0.01.05c-0.01.02-0.01.04-0.01.06c-0.01.02-0.01.04-0.01.06c0 .02-0.01.04-0.01.06c-0.01.02-0.01.04-0.01.06c-0.01.02-0.01.04-0.01.05c-0.01.02-0.01.03-0.02.05c-0.01.02-0.01.03-0.02.04c-0.01.01-0.01.03-0.02.04c-0.01.01-0.02.04-0.02.04c-0.01.01-0.02.03-0.02.04c-0.01.01-0.02.03-0.03.04c-0.01.01-0.02.02-0.03.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.03.02-0.04.03c-0.01.01-0.02.02-0.03.03c-0.01.01-0.03.02-0.05.03c-0.02.01-0.03.02-0.05.03c-0.02.01-0.04.02-0.06.03c-0.02.01-0.04.01-0.06.02c-0.02.01-0.05.01-0.07.01s-0.06 0-0.09 0.01zM13.455 13.4h-2.37v-3.54c0-.84-.02-1.92-1.17-1.92-1.17 0-1.35.91-1.35 1.86v3.6h-2.37V6.17h2.27v1.04h.03c.32-.6 1.1-1.23 2.23-1.23 2.39 0 2.83 1.57 2.83 3.6v4.22z"/>
+                    </svg>
+                    <span class="mt-2 text-sm">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-gray-400">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 개발자D. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
